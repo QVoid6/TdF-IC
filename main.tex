@@ -1,0 +1,68 @@
+\documentclass[10pt]{extarticle}
+
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage[letterpaper,margin=2cm]{geometry}
+
+\begin{document}
+
+{\noindent\Huge\bf \\[0.5\baselineskip] Trabajo de Física: I Corte}\\[2\baselineskip] % Título
+{{\bf Física, 4to "C"}\\ {\textit{-----, 18 de Octubre del 2024}}}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    {\large \textsc{----- -----}\footnote{\textsc{con ----- -----, ----- -----, ----- ----- y ----- -----}}} % Autor
+\\[1.5\baselineskip]
+
+\section*{Problemas Propuestos}
+
+\textbf{Problemas 1.} \emph{A continuación se te proponen varias expresiones. Despeja la variable que se te señala en el paréntesis ubicado a la derecha.}
+\begin{equation*}
+    S=\frac{K\cdot V^2}{2} \qquad (K) \tag{5}
+\end{equation*}
+\begin{equation}
+    L=L_0[1+K(T-T_0)]\qquad (K) \tag{25}
+\end{equation}
+
+\noindent\textbf{Solución 1.5.} \emph{Despejamos K:}
+    \begin{flalign*}
+        S&=\frac{K\cdot V^2}{2}\Rightarrow \tag*{Multiplicamos por 2/\emph{V}\textsuperscript{2}}\\
+        S\cdot \left( \frac{2}{V^2} \right)&=\frac{K\cdot V^2}{2}\cdot \left( \frac{2}{V^2} \right)\Rightarrow \tag*{Simplificamos}\\
+        \frac{2S}{V^2}&=K\Rightarrow \\
+        \Aboxed{K&=\frac{2S}{V^2}}
+    \end{flalign*}
+\textbf{Solución 1.25.} \emph{Despejamos K:}
+    \begin{flalign*}
+        L&=L_0[1+K(T-T_0)]\Rightarrow \tag*{Multiplicamos por 1/\emph{L}\textsubscript{0}}\\
+        L\cdot \left( \frac{1}{L_0}\right)&=L_0[1+K(T-T_0)]\cdot \left( \frac{1}{L_0}\right)\Rightarrow \tag*{Simplificamos}\\
+        \frac{L}{L_0}&=1+K(T-T_0)\Rightarrow \tag*{Restamos 1}\\
+        \frac{L}{L_0}-1&=1+K(T-T_0)-1\Rightarrow \tag*{Simplificamos}\\
+        \frac{L}{L_0}-1&=K(T-T_0)\Rightarrow \tag*{Multiplicamos por 1/(\emph{T}-\emph{T}\textsubscript{0})}\\
+        \left( \frac{L}{L_0}-1\right)\cdot \frac{1}{T-T_0}&=K(T-T_0)\cdot \frac{1}{T-T_0}\Rightarrow \tag*{Simplificamos}\\
+        \frac{\frac{L}{L_0}-1}{T-T_0}&=K\Rightarrow\\
+        \Aboxed{K&=\frac{\frac{L}{L_0}-1}{T-T_0}}
+    \end{flalign*}
+\newpage
+
+\noindent\\[0.5\baselineskip]\textbf{Problemas 2.} \emph{Usa el método de conversión de unidades para hacer lo siguiente:}\\[-1\baselineskip]
+\begin{center}
+    (4) \emph{Si una tonelada tiene \emph{1000kg}, ¿cuántos \emph{kg} son \emph{200t}?}\\[1\baselineskip]
+    (6) \emph{¿Cuántas \emph{yd} son \emph{25ft}?}
+\end{center}
+\textbf{Solución 2.4.} \emph{Transformamos \emph{200t} a pies:}
+    \begin{flalign*}
+        1\si{t}&=1000\si{kg}\Rightarrow \tag*{Factor de Conversión}\\
+        \Aboxed{1&=\frac{1000\si{kg}}{1\si{t}}}
+    \end{flalign*}
+    $$
+    200\si{t}=200\si{t}\cdot \frac{1000\si{kg}}{1\si{t}}=200\cdot 1000\si{kg}=\boxed{200000\si{kg}}
+    $$
+\textbf{Solución 2.6.} \emph{Transformamos \emph{25ft} a yardas:}
+    \begin{flalign*}
+        3\si{ft}&=1\si{yd}\Rightarrow \tag*{Factor de Conversión}\\
+        \Aboxed{1&=\frac{1\si{yd}}{3\si{ft}}}
+    \end{flalign*}
+    $$
+    25\si{ft}=25\si{ft}\cdot \frac{\si{yd}}{3\si{ft}}=\frac{25}{3}\si{yd}=8,\overline{3}\si{yd}\simeq\boxed{8,33\si{yd}}
+    $$
+\end{document}
